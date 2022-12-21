@@ -7,12 +7,12 @@ const quote = document.querySelector('.advice-quote');
 
 
 //fetch remote quote and insert into page
-const render = async () => {
+const render = async() => {
   // fetch('https://api.adviceslip.com/advice')
   //   .then(response => response.json())
   //   .then((data) => {
   //     advice.innerText = `ADVICE #${data['slip'].id}`;
-  //     quote.innerText = `${data['slip'].advice}`;  
+  //     quote.innerHTML = `&#8220${data['slip'].advice}&#8221`;  
   //   })
   try {
     const request = await fetch('https://api.adviceslip.com/advice');
@@ -21,7 +21,7 @@ const render = async () => {
       const response = await request.json();
 
       advice.innerText = `ADVICE #${response['slip'].id}`;
-      quote.innerText = `${response['slip'].advice}`;
+      quote.innerHTML = `&#8220${data['slip'].advice}&#8221`; 
     }
   } catch (err) {
     //this section is for testing only
