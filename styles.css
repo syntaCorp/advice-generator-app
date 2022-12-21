@@ -36,6 +36,8 @@ body {
     color: hsl(193, 38%, 86%);
     line-height: 1.4;
     margin-bottom: 1em;
+    font-size: 2.2em;
+    font-weight: 800;
 }
 #advice-id {
     color: hsl(150, 100%, 66%);
@@ -43,6 +45,7 @@ body {
     font-weight: 600;
     letter-spacing: 4px;
     margin: 0 0 1em;
+    font-size: 1em;
 }
 
 .dice {
@@ -98,6 +101,10 @@ body {
 @media screen and (min-width: 320px) and (max-width: 539px) {
     .pattern-mobile {
         display: inline;
+    }
+    .advice-quote {
+        
+        font-size: 1.7rem;
     }
   
 }

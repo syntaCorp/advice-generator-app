@@ -15,13 +15,13 @@ const render = async() => {
   //     quote.innerHTML = `&#8220${data['slip'].advice}&#8221`;  
   //   })
   try {
-    const request = await fetch('https://api.adviceslip.com/advice');
+    const request = await fetch('https://api.adviceslip.com/advice', {cache: 'no-cache'});
 
     if (request.ok) {
       const response = await request.json();
 
       advice.innerText = `ADVICE #${response['slip'].id}`;
-      quote.innerHTML = `&#8220${data['slip'].advice}&#8221`; 
+      quote.innerHTML = `&#8220${response['slip'].advice}&#8221`; 
     }
   } catch (err) {
     //this section is for testing only
