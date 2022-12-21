@@ -33,7 +33,7 @@ This is a beginner friendly project from Frontend Mentor.
 - Semantic HTML5 markup
 - Vanilla JavaScript
 - CSS custom properties
-- Flexbox
+- Flex
 - Mobile-first workflow
 
 ### What I learned
@@ -42,6 +42,7 @@ This project exposed me to Fetch API, and Async-await
 
 1.  Fetch API (GET / POST requests )
 2.  Event Listeners
+- Async/Await 
 
 
 ## Author
