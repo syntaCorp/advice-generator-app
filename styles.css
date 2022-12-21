@@ -99,18 +99,7 @@ body {
     .pattern-mobile {
         display: inline;
     }
-/* 
-    .dice {
-        position: fixed;
-        bottom: 12.5em;
-        left: 12em;
-        right: 12em;
-    } */
-
-    /* .card {
-        font-size: 0.8rem;
-        padding: 0.5em .5em 2em;
-    } */
+  
 }
 
 
@@ -122,11 +111,5 @@ body {
     .pattern-desktop {
         display: inline;
     }
-/* 
-    .dice {
-        position: relative;
-        bottom: -3.7em;
-        transition: .6s;
-    } */
         
 }
