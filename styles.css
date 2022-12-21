@@ -1,10 +1,8 @@
-/* Grayish Blue: hsl(217, 19%, 38%)
-Dark Grayish Blue: hsl(217, 19%, 24%)
- Dark Blue: hsl(218, 23%, 16%) */
 
 html {
     background-color: hsl(218, 23%, 16%);
     font-family: 'Manrope', sans-serif;
+    text-align: center;
     height: 100%;
 }
 
@@ -23,24 +21,28 @@ body {
 }
 
 .card {
+    font-family: 'Manrope', sans-serif;
     text-align: center;
-    width: 33.5em;
-    max-width: 90%;
-    height: 20.75em;
+    max-width: 33.5em;
+    width: 90%;
+    /* height: 20.75em; */
     background-color: hsl(217, 19%, 38%);
     border-radius: 1em;
+    position: relative;
+    padding: 2em 0;
 }
 
 .advice-quote {
     color: hsl(193, 38%, 86%);
     line-height: 1.4;
+    margin-bottom: 1em;
 }
-
 #advice-id {
     color: hsl(150, 100%, 66%);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 4px;
+    margin: 0 0 1em;
 }
 
 .dice {
@@ -48,47 +50,83 @@ body {
     border-radius: 2em;
     width: 4em;
     height: 4em;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    border: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 18em; */
+    cursor: pointer;
 }
 .dice:hover {
-    box-shadow: 0px 0px 20px 0px hsl(150deg 100% 66%);
+    box-shadow: 0px 0px 20px 20px hsl(150deg 100% 66% / 68%);
     transition: 0.3s;
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+.attribution {
+    color: #cfcdca;
+    background-color: hsl(217, 19%, 24%);
+    line-height: 3;
+    position: fixed;
+    bottom: 0em;
+    left: 0;
+    right: 0;
+    font-weight: 600;
+}
 
+.attribution a:hover{
+    color: hsl(193, 38%, 86%);
+}
+.attribution a{
+    color: #cfcdca;
+    text-decoration: none;
+}
+.pattern-mobile {
+    /* display: inline; */
+    margin: 0 0 2em;
+}
+
+.pattern-desktop {
+    /* display: inline-block; */
+    display: none;
+    margin: 0 0 2em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 539px) {
+    .pattern-mobile {
+        display: inline;
+    }
+/* 
     .dice {
         position: fixed;
         bottom: 12.5em;
         left: 12em;
         right: 12em;
-    }
+    } */
 
-    .pattern-desktop {
-        display: none;
-    }
-
-    .card {
+    /* .card {
         font-size: 0.8rem;
         padding: 0.5em .5em 2em;
-    }
+    } */
 }
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
     .pattern-mobile {
         display: none;
     }
-
+    .pattern-desktop {
+        display: inline;
+    }
+/* 
     .dice {
         position: relative;
         bottom: -3.7em;
         transition: .6s;
-        /* transition-timing-function: linear; */
-    }
+    } */
+        
 }
