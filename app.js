@@ -15,7 +15,7 @@ const render = async () => {
   //     quote.innerText = `${data['slip'].advice}`;  
   //   })
   try {
-    const request = await fetch('https://api.adviceslip.com/advic');
+    const request = await fetch('https://api.adviceslip.com/advice');
 
     if (request.ok) {
       const response = await request.json();
