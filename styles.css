@@ -17,7 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(217, 19%, 24%);
+    /* background-color: hsl(217, 19%, 24%); */
+    background-color: hsl(218, 23%, 16%);
 }
 
 .card {
@@ -26,7 +27,8 @@ body {
     max-width: 33.5em;
     width: 90%;
     /* height: 20.75em; */
-    background-color: hsl(217, 19%, 38%);
+    /* background-color: hsl(217, 19%, 38%); */
+    background-color: hsl(219, 19%, 24%);
     border-radius: 1em;
     position: relative;
     padding: 2em 0;
